@@ -15,7 +15,7 @@ const UserBidsPage = () => {
     const fetchUserBids = async () => {
       try {
         if (userId) {
-          const userBidsResponse = await axios.get(`https://backend-online-auction-system-mern.onrender.com/api/getUserBids/${userId}`);
+          const userBidsResponse = await axios.get(`https://saran-frontend.onrender.com/api/getUserBids/${userId}`);
           setUserBids(userBidsResponse.data.userBids);
           setFilteredBids(userBidsResponse.data.userBids);
 
